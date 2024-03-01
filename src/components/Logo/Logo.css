@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=YourFont:wght@300&display=swap');
+
+.logo {
+  display: flex;
+  align-items: baseline; /* Adjust if necessary to match vertical alignment */
+  white-space: nowrap; /* Prevents wrapping on small screens */
+}
+
+.logo-part {
+  font-family: 'YourFont', sans-serif; /* Replace with the actual font used in the logo */
+  font-weight: 300; /* Adjust the weight to match the look of your logo */
+  font-size: 3rem; /* Adjust the size to match your logo */
+  letter-spacing: normal; /* Adjust the letter spacing to match your logo */
+}
+
+/* If different parts of the logo have different styles, define them separately */
+.logo-part:first-child {
+  margin-right: 0.2em; /* Adjust the right margin to match the logo's spacing */
+}
+
+.logo-part:nth-child(2) {
+  font-weight: 400; /* If the slash is bolder, adjust the font-weight */
+}
+
+.logo-part:last-child {
+  margin-left: 0.2em; /* Adjust the left margin to match the logo's spacing */
+}

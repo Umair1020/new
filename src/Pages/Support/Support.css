@@ -1,0 +1,210 @@
+.dVlVEa {
+    display: block;
+    width: 100%;
+    background: white;
+    border-top: 1px solid rgb(229, 227, 218);
+}
+.ePWTnE {
+    display: block;
+    padding: 10px;
+    margin: 3em 0px 0px;
+}
+.HZkck {
+    display: block;
+    max-width: 1080px;
+    margin: 0px auto;
+    padding: 10px;
+}
+.ePWTnE {
+    display: block;
+    padding: 10px;
+    margin: 3em 0px 0px;
+}
+.ePWTnE h1 {
+    font-size: 48px;
+    padding-bottom: 15px;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    max-width: 500px;
+}
+.hVeoTy {
+    display: block;
+    width: 100%;
+    background:white;
+    border-bottom: 1px solid rgb(229, 227, 218);
+}
+@media (min-width: 576px){
+.bYzApS {
+    text-align: center;
+    max-width: 588px;
+    margin: 0px auto;
+}
+}.bYzApS h1 {
+    margin: 0px 0px 17px;
+    font-family: var(--font-eudoxus);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    color: rgb(47, 43, 67);
+    letter-spacing: -0.02em;
+}
+.kQqzRp {
+    width: 100%;
+    min-height: 100dvh;
+    position: relative;
+    font-family: var(--font-satoshi);
+}
+.bYzApS h1 {
+    margin: 0px 0px 17px;
+    font-family: var(--font-eudoxus);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    color: rgb(47, 43, 67);
+    letter-spacing: -0.02em;
+}
+.bYzApS p {
+    margin: 0px;
+    font-family: var(--font-satoshi);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(47, 43, 67, 0.6);
+    letter-spacing: -0.012em;
+}
+.Xa-DUj {
+    align-items: center;
+}
+.hgICFC {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.half-section {
+    padding: 80px 0;
+}
+.extra-small-screen {
+    height: 300px;
+}
+
+.page-title-large h1 {
+    font-size: 42px;
+    line-height: 49px;
+}
+
+.bg-sky-blue {
+    background: linear-gradient(90deg,#4273f0,#30d4ba);
+}
+
+.newsletter-style-02 input {
+    padding-right: 145px;
+}
+.newsletter-style-02 .btn {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0;
+    letter-spacing: inherit;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.large-input {
+    padding: 18px 25px 19px;
+}
+/* input, select, textarea {
+    border: 1px solid #dfdfdf;
+    color: #828282;
+    line-height: normal;
+    margin: 0 0 15px;
+    max-width: 100%;
+    outline: none;
+    padding: 10px 15px;
+    resize: none;
+    width: 100%;
+} */
+
+.xl-padding-3-rem-lr {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.feature-box-left-icon {
+    -ms-flex-align: stretch!important;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    align-items: stretch!important;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+.margin-35px-right {
+    margin-right: 35px;
+}
+.feature-box-left-icon .feature-box-content {
+    flex: 1;
+    overflow: hidden;
+}
+.padding-4-rem-all {
+    padding: 4rem;
+}
+.feature-box {
+    -ms-flex-align: start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: start;
+    z-index: 1;
+}
+.feature-box-left-icon .feature-box-icon {
+    margin-right: 35px;
+}
+.btn.btn-link {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid;
+    padding: 7px 0 2px;
+    position: relative;
+    text-decoration: none;
+}
+.padding-4-rem-all {
+    padding: 4rem;
+}
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+.z-index-6 {
+    z-index: 6;
+}
+.padding-55px-tb {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.padding-5-rem-tb {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.alt-font {
+    font-family: Poppins,sans-serif;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}

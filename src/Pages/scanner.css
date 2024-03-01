@@ -1,0 +1,14 @@
+.bot-reply {
+    align-self: flex-start;
+    background-color: #4b30f1;
+    white-space: pre-wrap;
+    font-family: Arial, inter;
+    font-size: 16px;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.5; /* Adjust line height for professional spacing */
+    width: 100%;
+  }

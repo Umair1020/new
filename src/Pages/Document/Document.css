@@ -1,0 +1,202 @@
+.w-full {
+  width: 100%;
+}
+.jHAXMR {
+  display: inline-flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: inherit;
+  max-width: inherit;
+  transition: all 0.2s ease 0s;
+}
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+  appearance: none; /* Remove default arrow on certain browsers */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12l-6-6 1.41-1.41L10 9.17l4.59-4.58L16 6z"/></svg>'); /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+/* Style the options within the select */
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the options within the select */
+option {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Style the select when it's open */
+select:active, select:hover {
+  border-color: #555; /* Change border color on hover */
+}
+
+.kkArEI {
+  display: block;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(229, 227, 218);
+  margin: 10px;
+  overflow-x: scroll;
+}
+.khEYYi {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+.QJjyJ {
+  display: inline-flex;
+  position: absolute;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 4;
+  left: 12px;
+  pointer-events: none !important;
+}
+.fxBdmI {
+  width: 16px;
+  height: 16px;
+}
+.jHAXMR path {
+  transition: all 0.2s ease 0s;
+  fill: rgba(0, 0, 0, 0.5);
+}
+.fgXWgc {
+  display: inline-flex;
+  position: relative;
+  appearance: none;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: left;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  white-space: nowrap;
+  width: inherit;
+  max-width: inherit;
+  margin: 0px;
+  padding: 10px 12px 10px 36px;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(229, 227, 218);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.aEnZv {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  line-height: normal;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 10px 12px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: #262626;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+.lbCzeA {
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-right: 7px;
+}
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+.hccZzD {
+  display: table-row-group;
+  vertical-align: middle;
+}
+.jSZOxE:last-child {
+  border-bottom: none;
+}
+.jSZOxE {
+  display: table-row;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(229, 227, 218);
+}
+.jSZOxE td:first-child {
+  font-weight: 500;
+}
+.jSZOxE .row-icon {
+  width: 16px;
+  padding-right: 0px;
+}
+.jgaYkc {
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: left;
+  padding: 12px 15px;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+}
+.jSZOxE .row-icon svg {
+  margin-bottom: -2px;
+}
+.jgaYkc:nth-child(2) {
+  width: 100%;
+}
+.jgaYkc:nth-child(3), .jgaYkc:nth-child(4) {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: right;
+}
+.iA-dhbq {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 10px;
+}
+p:not(:last-child) {
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+.eIYRmZ {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+}

@@ -1,0 +1,163 @@
+.fQOOHf {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: rgb(248, 245, 238);
+    border-bottom: 1px solid rgb(229, 227, 218);
+}
+
+.bVtJuo {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.dQhaIx {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--serif);
+}
+
+.bsuEPg * {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.fSIuCc {
+    fill: none;
+    height: 18px;
+    width: auto;
+}
+.aEnZv {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    line-height: normal;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 10px 12px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    /* background: rgb(255, 97, 47); */
+    font-family: var(--sans);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+.fxXsFO {
+    width: 16px;
+    height: 16px;
+}
+.eaInef {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+.fxXsFO path {
+    fill: rgb(255, 255, 255);
+}
+.lbCzeA {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-right: 7px;
+}
+.fosaaz {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: calc(100vh - 61px);
+    background: rgb(250, 249, 246);
+}
+main {
+    min-height: 100vh;
+}
+.aTnAc {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 50%;
+}
+.aTnAc1 {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 25%;
+}
+.iSHeEa {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 50%;
+}
+.hRobpf {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.profile-pic {
+    width: 30px;
+    margin-right: 25px;
+    height: 30px;
+    background: #754ddf;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+  
+  /* Styles for the dropdown when it's open */
+  .dropdown {
+    position: absolute;
+/* Adjust the distance from the profile picture as needed */
+    right: 1px; /* Adjust the distance from the right side as needed */
+    /* background: rgb(255, 97, 47); */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+
+    z-index: 9999;
+  }
+  
+  .dropdown button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .dropdown button:hover {
+    /* background: rgb(255, 97, 47); */
+    /* color: white; */
+  }
+  .font{
+    font-family: var(--serif);
+    font-size: 20px;
+    padding-right: 20px;
+  }

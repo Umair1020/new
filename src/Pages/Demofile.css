@@ -1,0 +1,239 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 100%; */
+  /* Adjust as needed */
+  margin: auto;
+  height: 90vh;
+  background-color: #f4f4f7;
+  /* border-radius: 10px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* overflow-y: scroll; */
+
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 1000px;
+  width: 100%;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.user-message {
+  /* margin-bottom: 50px; */
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 100%;
+  /* Adjust as needed */
+}
+
+.user-message {
+  align-self: flex-start;
+  background-color: #e0e0e0;
+  /* Light grey for user messages */
+}
+.bot-reply {
+  align-self: flex-start;
+  background-color: #4b30f1;
+  white-space: pre-wrap;
+  font-family: Arial, inter;
+  font-size: 16px;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.5; /* Adjust line height for professional spacing */
+  width: 100%;
+}
+
+.bot-reply h1,
+.bot-reply h2,
+.bot-reply h3,
+.bot-reply h4,
+.bot-reply h5,
+.bot-reply h6 
+.bot-reply p {
+  color: white;
+}
+.liblack{
+  color: white;
+}
+.message {
+  max-width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #FCFCFF;
+  margin-top: auto; /* Keep the input container at the bottom */
+  /* margin-left: 50%; Center horizontally */
+  /* left: 50%; */
+  width: 100%;
+  
+}
+
+@media (max-width:991px) {
+  .input-container {
+    display: flex;
+    /* padding: 10px; */
+    /* background-color: #FCFCFF; */
+    /* margin-top: auto;  */
+    /* margin-right: 50%; */
+    /* left: 50%; */
+    /* width: 100%; */
+  }
+.boxstyle{
+  background-color: #fff;
+  border: 1px solid #D8D9E5;
+  padding: "16px";
+  border-radius: "12px";
+  border: "1px";
+  gap: "16px";
+  width: "auto";
+}
+  .input-container button {
+    border-radius: 20px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+   
+  }
+
+}
+.boxstyle{
+
+       background-color: #fff; 
+       border: 1px solid #D8D9E5;
+ 
+       padding: "16px";
+       border-radius: "12px";
+       border: "1px";
+       gap: "16px";
+       width: "528px";
+       margin: "0 10px";
+    
+       text-align: "center",
+     };
+
+
+.input-container button {
+  border-radius: 20px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  /* Light grey */
+  border-top: 4px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  /* Height of the loader container */
+  width: 100%;
+  /* Full width */
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Handling responsiveness */
+@media (max-width: 600px) {
+  .chat-container {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .user-message {
+    max-width: 75%;
+  }
+}
+
+/* Add this at the top of your Demofile.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.message {
+  animation: fadeIn 0.5s ease-out;
+  max-width: 100%;
+  /* ... existing styles ... */
+}
+
+.input {
+  flex-grow: 1;
+  margin-right: 10px;
+  background: #EBEBEB;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.wrapper {
+  /* This part is important for centering */
+  display: grid;
+  place-items: start;
+}
+
+.typingdemo {
+  width: 90%;
+  animation: typing 1s steps(22);
+  white-space: pre-wrap;
+  overflow: hidden;
+  font-family: inter;
+  font-size: 16px;
+
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Change initial width to 0 */
+  }
+  100% {
+    width: 100%;
+  }
+}

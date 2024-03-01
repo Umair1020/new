@@ -1,0 +1,131 @@
+/* .split-screen-container {
+    display: flex;
+    height: 100vh; 
+  }
+   */
+
+   .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .spinner1 {
+    border: 5px solid white;
+    border-top: 6px solid rgb(117 77 223);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+.pdf-viewer {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 10px;
+  height: 90vh;
+  width: 100%;
+}
+
+/* .chat-box {
+    flex: 1;
+    border-left: 1px solid #ccc; 
+    padding: 10px;
+  }
+   */
+@media (max-width: 991px) {
+  .pdf-viewer {
+    flex: 1;
+    overflow-y: hidden;
+    padding: 10px;
+    height: 40vh;
+    width: 100%;
+  }
+
+}
+/* PDFReader.css */
+.pdf-container {
+  max-height: 800px; /* Set your desired max height */
+  overflow-y: auto; /* Add a scrollbar if the content overflows */
+}
+
+.pdf-page {
+  max-height: 100vh; /* Ensure the page doesn't exceed the height of the container */
+}
+@media (max-width: 768px) {
+  .pdf-container {
+    flex: 1;
+    overflow-y: scroll; 
+    padding: 10px;
+    height: 40vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    max-width: 100%; /* Allow the container to shrink to the screen width */
+  }
+  .react-pdf__Page {
+    height: 100vh; /* Set a fixed height for each page */
+    overflow-y: hidden; /* Enable vertical scrolling for pages */
+    white-space: normal; /* Allow line breaks within pages */
+  }
+}
+.selectdiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+  
+  float: left;
+  min-width: 200px;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+
+.selectdiv:after {
+  content: '<>';
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+  
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}

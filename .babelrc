@@ -1,0 +1,7 @@
+{
+    "presets": [
+      ["@babel/preset-env", { "targets": "last 2 versions, not dead, > 0.25%" }]
+    ],
+    "plugins": ["@babel/plugin-syntax-top-level-await"]
+  }
+  
