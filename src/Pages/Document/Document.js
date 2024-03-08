@@ -8,7 +8,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { baseurl } from "../../utils/BaseUrl";
 import { useFile } from "../../FIleContext";
-
+import Sidebar from "../../components/Sidebar"
 import Model from "../Model/Model";
 import Footer from "../../components/Footer/Footer";
 import SubHead from "../../components/Header/SubHead";
@@ -29,7 +29,7 @@ const Document = () => {
             body: JSON.stringify({ session_id: sessionId }),
           });
           const session = await response.json();
-        } catch (error) {}
+        } catch (error) { }
       }
     };
 
@@ -94,7 +94,7 @@ const Document = () => {
       });
       setShowDocs(false);
       setTypeDocuments(data);
-    } catch (e) {}
+    } catch (e) { }
   };
   const filteredTypeDocuments = typeDocuments.filter((document, index) =>
     document.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -180,7 +180,7 @@ const Document = () => {
     border: "none",
   };
   return (
-    <div>
+    <div className="row">
       <SubHead />
 
       {show && (
@@ -201,32 +201,37 @@ const Document = () => {
           <Model hide={hideModal} userId={userId} />
         </div>
       )}
+      <div className="row " style={{display: "flex"}}> 
+        <div className="col-lg-2">
 
-      <div
-        className="w-full bg-[#faf9f6]"
-        style={{ minHeight: "calc(100vh - 61px)" }}
-      >
-        <div className="max-w-[1080px] mx-auto p-2">
-          <div className="text-left p-2 my-4">
-            <h2 className="text-3xl font-serif">Documents</h2>
-          </div>
-          <div className="flex justify-start mb-4 px-2">
-            <div className="flex-inline justify-start items-center w-full">
-              <div className="sc-1c859520-0 jHAXMR">
-                <span className="sc-1c859520-2 QJjyJ">
-                  <svg className="sc-a8a76c9-0 fxBdmI" viewBox="0 0 16 16">
-                    <path d="M15.55 13.43l-2.67-2.68a6.94 6.94 0 001.11-3.76c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.42 3.76-1.11l2.68 2.67a1.498 1.498 0 102.12-2.12zm-8.56-1.44c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
-                  </svg>
-                </span>
-                <input
-                  className="sc-1c859520-1 fgXWgc input"
-                  placeholder="Search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <button
-                  onClick={handleBoxClick1}
-                  style={customStyles}
+          <Sidebar />
+        </div>
+        <div
+          className=" bg-[#faf9f6] mx-auto"
+          style={{ minHeight: "calc(100vh - 61px)" , width: "75%" }}
+        >
+
+          <div className="max-w-[700px] mx-auto p-2 col-lg-10">
+            <div className="text-left p-2 my-4">
+              <h2 className="text-3xl font-serif">Documents</h2>
+            </div>
+            <div className="flex justify-start mb-4 px-2">
+              <div className="flex-inline justify-start items-center w-full">
+                <div className="sc-1c859520-0 jHAXMR">
+                  <span className="sc-1c859520-2 QJjyJ">
+                    <svg className="sc-a8a76c9-0 fxBdmI" viewBox="0 0 16 16">
+                      <path d="M15.55 13.43l-2.67-2.68a6.94 6.94 0 001.11-3.76c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.42 3.76-1.11l2.68 2.67a1.498 1.498 0 102.12-2.12zm-8.56-1.44c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                  </span>
+                  <input
+                    className="sc-1c859520-1 fgXWgc input"
+                    placeholder="Search"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                  />
+                  <button
+                    onClick={handleBoxClick1}
+                    style={customStyles}
                   // style={{
                   //   borderRadius: "12px",
                   //   background: "var(--Button-color, #3843D0)",
@@ -235,54 +240,54 @@ const Document = () => {
                   //   marginRight: "12px",
                   //   marginLeft: "10px",
                   // }}
-                >
-                  Upload
-                </button>
-                {documents.length >= 1 ? (
-                  <Link to={`/chatwithmultiple/${userId}`}>
+                  >
+                    Upload
+                  </button>
+                  {documents.length >= 1 ? (
+                    <Link to={`/chatwithmultiple/${userId}`}>
+                      <button style={chatAll}>
+                        <span>✨ </span>
+                        <span style={{ marginLeft: "7px" }}>Chat All</span>
+                      </button>
+                    </Link>
+                  ) : (
                     <button style={chatAll}>
                       <span>✨ </span>
                       <span style={{ marginLeft: "7px" }}>Chat All</span>
                     </button>
-                  </Link>
-                ) : (
-                  <button style={chatAll}>
-                    <span>✨ </span>
-                    <span style={{ marginLeft: "7px" }}>Chat All</span>
-                  </button>
-                )}
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="container d-flex pl-2">
-            {documents.length >= 1 ? (
-              <div style={chatAll} onClick={reset}>
-                Reset
-              </div>
-            ) : (
-              ""
-            )}
-            {Array.from(
-              new Set(documents.map((type) => type.documentType))
-            ).map(
-              (uniqueType) =>
-                uniqueType !== undefined && (
-                  <div
-                    style={chatAll}
-                    onClick={() => getPdfByName(uniqueType)}
-                    key={uniqueType}
-                  >
-                    {uniqueType}
-                  </div>
-                )
-            )}
-          </div>
+            <div className="container d-flex pl-2">
+              {documents.length >= 1 ? (
+                <div style={chatAll} onClick={reset}>
+                  Reset
+                </div>
+              ) : (
+                ""
+              )}
+              {Array.from(
+                new Set(documents.map((type) => type.documentType))
+              ).map(
+                (uniqueType) =>
+                  uniqueType !== undefined && (
+                    <div
+                      style={chatAll}
+                      onClick={() => getPdfByName(uniqueType)}
+                      key={uniqueType}
+                    >
+                      {uniqueType}
+                    </div>
+                  )
+              )}
+            </div>
 
-          <div className="sc-4131da42-0 kkArEI">
-            <table className="sc-4131da42-1 khEYYi">
-              <tbody className="sc-4131da42-2 hccZzD">
-                {showDocs
-                  ? filteredDocuments.map((document, index) => {
+            <div className="sc-4131da42-0 kkArEI">
+              <table className="sc-4131da42-1 khEYYi">
+                <tbody className="sc-4131da42-2 hccZzD">
+                  {showDocs
+                    ? filteredDocuments.map((document, index) => {
                       const updateTime = new Date(document.time); // Document update time
                       const timeDifference = now - updateTime;
                       const formattedTimeDifference =
@@ -346,7 +351,7 @@ const Document = () => {
                         </tr>
                       );
                     })
-                  : filteredTypeDocuments.map((document, index) => {
+                    : filteredTypeDocuments.map((document, index) => {
                       const updateTime = new Date(document.time); // Document update time
                       const timeDifference = now - updateTime;
                       const formattedTimeDifference =
@@ -408,12 +413,13 @@ const Document = () => {
                         </tr>
                       );
                     })}
-              </tbody>
-            </table>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
